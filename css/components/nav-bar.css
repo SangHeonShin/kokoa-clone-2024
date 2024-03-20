@@ -31,13 +31,13 @@
   bottom: 15px;
 }
 .nav__status {
-  display: flex;
   background-color: tomato;
-  justify-content: center;
-  align-items: center;
   width: 8px;
   height: 8px;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 30px;
 }
