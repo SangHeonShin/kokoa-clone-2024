@@ -4,6 +4,7 @@
   padding: 5px 3px;
   position: fixed;
   width: 100%;
+  box-sizing: border-box;
 }
 .status-bar__column {
   width: 33%;
@@ -14,6 +15,7 @@
 .status-bar__column:nth-child(2) {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .status-bar__column:last-child {
   display: flex;
