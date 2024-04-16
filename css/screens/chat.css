@@ -41,12 +41,29 @@
   animation: fadeIn 0.8s linear;
 }
 
+@keyframes chat__timestamp {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    background-color: tomato;
+    transform: rotateZ(360deg);
+  }
+}
+
 .chat__timestamp {
   color: white;
   background-color: #92a4b3;
   padding: 15px;
   border-radius: 25px;
   margin-bottom: 25px;
+  animation: chat__timestamp 1s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes message-row {
@@ -144,7 +161,7 @@
   align-items: center;
   padding: 5px 25px;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -211,7 +228,7 @@
   opacity: 0;
 }
 
-.reply:focus-within input {
+.reply input:focus {
   width: 97vw;
   transform: translateX(-11%) translateY(-80px);
 }
